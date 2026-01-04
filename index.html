@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ExploreWorld | Ultimate Travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">ExploreWorld</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+        <li class="nav-item">
+          <button id="darkModeBtn">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- VIDEO HERO -->
+<section id="home" class="video-hero">
+  <video autoplay muted loop>
+    <source src="travel.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Travel Beyond Imagination</h1>
+    <p>Luxury • Adventure • Comfort</p>
+    <a href="#booking" class="btn btn-warning">Book Now</a>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations" class="section">
+<div class="container">
+<h2 class="title">Top Destinations</h2>
+<div class="row g-4 reveal">
+
+<div class="col-md-4">
+<div class="card travel-card">
+<img src="destination1.jpg">
+<div class="card-body">
+<h5>Paris</h5>
+<p>Luxury city tours</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card travel-card">
+<img src="destination2.jpg">
+<div class="card-body">
+<h5>Bali</h5>
+<p>Beach resorts</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card travel-card">
+<img src="destination3.jpg">
+<div class="card-body">
+<h5>Switzerland</h5>
+<p>Mountains & snow</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section light-bg">
+<div class="container">
+<h2 class="title">Our Services</h2>
+<div class="row g-4 reveal">
+
+<div class="col-md-4 text-center">
+<img src="service1.jpg" class="img-fluid rounded mb-3">
+<h5>Luxury Hotels</h5>
+<p>Premium 5-star stays</p>
+</div>
+
+<div class="col-md-4 text-center">
+<img src="service2.jpg" class="img-fluid rounded mb-3">
+<h5>Expert Guides</h5>
+<p>Professional tour guides</p>
+</div>
+
+<div class="col-md-4 text-center">
+<img src="service3.jpg" class="img-fluid rounded mb-3">
+<h5>Safe Travel</h5>
+<p>100% safety guaranteed</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="section">
+<div class="container">
+<h2 class="title">Travel Packages</h2>
+<div class="row g-4 reveal">
+
+<div class="col-md-4">
+<div class="package-card">
+<img src="packege1 .jpg">
+<h5>Romantic Package</h5>
+<p>₹1,20,000</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="package-card">
+<img src="packege2.jpg">
+<h5>Adventure Package</h5>
+<p>₹95,000</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="package-card">
+<img src="packege3.jpg">
+<h5>Family Package</h5>
+<p>₹1,80,000</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section booking light-bg">
+<div class="container">
+<h2 class="title">Book Your Trip</h2>
+
+<form id="bookingForm" class="reveal">
+<input type="text" id="name" placeholder="Full Name">
+<input type="email" id="email" placeholder="Email">
+<select id="destination">
+<option value="">Select Destination</option>
+<option>Paris</option>
+<option>Bali</option>
+<option>Switzerland</option>
+</select>
+<input type="date" id="date">
+<button>Book Now</button>
+<p id="formMsg"></p>
+</form>
+
+</div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section">
+<div class="container">
+<h2 class="title">Happy Travelers</h2>
+
+<div class="row g-4 reveal">
+<div class="col-md-6 text-center">
+<img src="testimonial1.jpg" class="testimonial-img">
+<p>"Best travel experience ever!"</p>
+</div>
+<div class="col-md-6 text-center">
+<img src="testimonial2.jpg" class="testimonial-img">
+<p>"Luxury & comfort at best."</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 ExploreWorld | Ultimate Travel Experience</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
